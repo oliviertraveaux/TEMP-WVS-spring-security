@@ -57,7 +57,7 @@ public class MySecurityConfig {
                 .roles("CHAMPION", "DIRECTOR")
                 .build();
 
-        return new InMemoryUserDetailsManager(List.of(user, admin));
+        return new InMemoryUserDetailsManager(List.of(user, admin, dummy));
     }
 
 }
